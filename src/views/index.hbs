@@ -1,0 +1,26 @@
+<div class="container">
+  <h3>FAC9 Salaries a year after graduation</h3>
+
+  <table>
+      <thead>
+          <tr>
+              <th>Company type</th>
+              <th>Title</th>
+              <th>Stack</th>
+              <th>Salary</th>
+          </tr>
+      </thead>
+      <tbody>
+        {{#each salaryData}}
+          <tr>
+              <td>{{this.company_type}}</td>
+              <td>{{this.job_title}}</td>
+              <td>{{this.stack}}</td>
+              <td>{{this.salary}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+  </table>
+
+
+</div>

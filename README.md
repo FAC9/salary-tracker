@@ -1,8 +1,18 @@
 # Salary tracker for FAC9
 
-I propose that we use a document store with a simple front end to input/output salary information for our FAC cohort. We should start with our cohort but structure the data so other cohorts could potentially use this tool if they choose to.
+I have flung together a postgres db with an express.js back end that spews anonymised data into a template. We should start with our cohort but structure the data so other cohorts could potentially use this tool if they choose to.
+
+At present there's no dynamic way to add details, nor is there even a users table. To come!
 
 ### Proposed tools (given our cohort's expertise)
-- React or is this overkill? Vanilla JS with something like materialise?
-- D3 for graphing
-- Postgres OR MongoDB
+- Postgres, currently hosted on ElephantSQL
+- Express backend, ss rendering through Handlebars
+
+### To run this locally
+- Clone the repo
+- Run `npm install`
+- Rename config..copy.js as config.js
+- Request the db_url from the repo admin (Lucy) and paste it into config.js
+- Run `npm start` or `npm devStart`
+
+Open your browser to localhost:4000/salaries/FAC9
