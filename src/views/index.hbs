@@ -4,23 +4,22 @@
   <table>
       <thead>
           <tr>
-              <th>Company type</th>
               <th>Title</th>
+              <th class="pr-5">Company type</th>
               <th>Stack</th>
-              <th>Salary</th>
+              <th class="right">Salary</th>
           </tr>
       </thead>
       <tbody>
         {{#each salaryData}}
           <tr>
-              <td>{{this.company_type}}</td>
               <td>{{this.job_title}}</td>
+              <td class="pr-5">{{this.company_type}}</td>
               <td>{{this.stack}}</td>
-              <td>{{this.salary}}</td>
+              <td class="right">{{this.salary}}</td>
           </tr>
         {{/each}}
       </tbody>
   </table>
-
 
 </div>
