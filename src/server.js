@@ -37,7 +37,7 @@ app.get('/salaries/:cohort', (req, res) => {
 
 
 module.exports = function () {
-  http.createServer(app).listen(process.env.PORT || 4000, () => {
+  http.createServer(app).listen(4000, () => {
     console.log(`Server is running on port: 4000`);
   });
 }
