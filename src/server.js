@@ -1,5 +1,3 @@
-const config = require('env2')('../config.js');
-
 const path = require('path');
 const bodyParser = require('body-parser');
 const express = require('express');
