@@ -26,8 +26,7 @@ app.get('/salaries/:cohort', (req, res) => {
   queries.getSalariesByCohort(cohort, function (err, salaries) {
     if (err) console.log(err);
     else {
-      console.log('data: ', salaries);
-      // salaries.sort((a, b) => b.salary - a.salary);
+      salaries.sort((a, b) => b.salary - a.salary);
       res.render('index.hbs', {salaryData:salaries});
     }
   });
