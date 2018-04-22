@@ -4,19 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FAC9/salary-tracker.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FAC9/salary-tracker/issues"
-  },
-  "homepage": "https://github.com/FAC9/salary-tracker#readme",
-  "scripts": {
     "build": "node database/dbBuild.js",
     "test": "echo \"Error: no test specified\"",
     "start": "node index.js",
@@ -26,12 +13,19 @@
     "type": "git",
     "url": "git+https://github.com/SocialFinanceDigitalLabs/leaving-well"
   },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FAC9/salary-tracker/issues"
+  },
+  "homepage": "https://github.com/FAC9/salary-tracker#readme",
   "devDependencies": {
     "nodemon": "^1.11.0"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
+    "env2": "^2.2.0",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.6",

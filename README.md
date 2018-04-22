@@ -11,8 +11,8 @@ At present there's no dynamic way to add details, nor is there even a users tabl
 ### To run this locally
 - Clone the repo
 - Run `npm install`
-- Rename config..copy.js as config.js
-- Request the db_url from the repo admin (Lucy) and paste it into config.js
+- Rename config.copy to config.env
+- Request the db_url from the repo admin (Lucy) and paste it into config.env
 - Run `npm start` or `npm devStart`
 
-Open your browser to localhost:4000/salaries/FAC9
+Open localhost:4000/salaries/FAC9 in your browser

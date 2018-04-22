@@ -1,3 +1,5 @@
 /node_modules
 config.js
 database/dbBuild.sql
+npm-debug.log
+*.env
