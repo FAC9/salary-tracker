@@ -1,25 +1,22 @@
 <div class="container">
   <h3>FAC9 Salaries a year after graduation</h3>
 
-  <table>
-      <thead>
-          <tr>
-              <th>Title</th>
-              <th class="pr-5">Company type</th>
-              <th>Stack</th>
-              <th class="right">Salary</th>
-          </tr>
-      </thead>
-      <tbody>
-        {{#each salaryData}}
-          <tr>
-              <td>{{this.job_title}}</td>
-              <td class="pr-5">{{this.company_type}}</td>
-              <td>{{this.stack}}</td>
-              <td class="right">{{this.salary}}</td>
-          </tr>
-        {{/each}}
-      </tbody>
-  </table>
+  <div>
+    <div class="row header">
+        <div class="col s4">Title</div>
+        <div class="col s2">Company type</div>
+        <div class="col s4">Stack</div>
+        <div class="col s2 right">Salary</div>
+    </div>
+
+      {{#each salaryData}}
+        <div class="row">
+            <div class="col s4">{{this.job_title}}</div>
+            <div class="col s2">{{this.company_type}}</div>
+            <div class="col s4">{{this.stack}}</div>
+            <div class="col s2 right">{{this.salary}}</div>
+        </div>
+      {{/each}}
+</div>
 
 </div>

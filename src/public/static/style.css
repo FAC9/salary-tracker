@@ -1,3 +1,8 @@
-.pr-5 {
-  padding-right: 3rem;
+.header {
+  border-bottom: grey solid 2px;
+  padding-bottom: 5px;
+}
+
+.right {
+  text-align: right;
 }
