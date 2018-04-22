@@ -6,7 +6,13 @@ if (!config.DB_URL) {
   throw new Error('Environment variable DB_URL must be set');
 }
 
-const params = url.parse(config.DB_URL);
+let params;
+if (NODE_ENV === 'production') {
+  params = url.parse(process.env.DB_URL);
+} else {
+  params = url.parse(config.DB_URL);
+}
+
 
 const [username, password] = params.auth.split(':');
 

@@ -1,7 +1,6 @@
 const config = require('../config.js');
 
 const path = require('path');
-const http = require('http');
 const bodyParser = require('body-parser');
 const express = require('express');
 const hbs = require('express-handlebars');
@@ -10,7 +9,6 @@ const multer = require('multer');
 const upload = multer();
 const app = express();
 const queries = require('./queries');
-let port = process.env.port || 4000;
 
 app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts/'}));
 app.set('views', path.join(__dirname,'views'));
@@ -37,8 +35,4 @@ app.get('/salaries/:cohort', (req, res) => {
 });
 
 
-module.exports = function () {
-  http.createServer(app).listen(port, () => {
-    console.log(`Server is running on port: 4000`);
-  });
-}
+module.exports = app;
